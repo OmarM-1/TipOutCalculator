@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipout Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="title">
+            <img src="mamaslogo.png" alt="Logo" class="logo">
+            Server Tipout Calculator
+        </h1>
+        <form id="tipForm">
+            <label for="beerSales">Beer Sales ($):</label>
+            <input type="number" id="beerSales" required />
+
+            <label for="foodSales">Food Sales ($):</label>
+            <input type="number" id="foodSales" required />
+
+            <label for="liquorSales">Liquor Sales ($):</label>
+            <input type="number" id="liquorSales" required />
+
+            <label for="wineSales">Wine Sales ($):</label>
+            <input type="number" id="wineSales" required />
+
+            <label for="totalSales">Total Net Sales ($):</label>
+            <input type="number" id="totalSales" required />
+
+            <label for="creditCardTips">Credit Card Tips <span style="color: #d73b3e; ">*optional*</span> ($) :</label>
+            <input type="number" id="creditCardTips" />
+
+            <button type="submit">Calculate Tipout</button>
+        </form>
+
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
