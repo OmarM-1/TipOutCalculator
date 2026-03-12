@@ -29,8 +29,8 @@ document.getElementById('tipForm').addEventListener('submit', function (e) {
             <div style="color: #273be2;"><strong>Beverage Sales</strong></div><div style="color: #273be2;"><strong>$${(beerSales + liquorSales + wineSales).toFixed(2)}</strong></div>
             <div style="color: #006600;"><strong>Busser</strong></div><div style="color: #006600;"><strong>$${Math.round(busser)}</strong></div>
             <div style="color: #006600;"><strong>Expo</strong></div><div style="color: #006600;"><strong>$${Math.round(expo)}</strong></div>
-            <div style="color: #006600;"><strong>Bartender</strong></div><div style="color: #006600;"><strong>$${Math.round(bartender)}</strong></div>
             <div style="color: #006600;"><strong>Host</strong></div><div style="color: #006600;"><strong>$${Math.round(host)}</strong></div>
+            <div style="color: #006600;"><strong>Bartender</strong></div><div style="color: #006600;"><strong>$${Math.round(bartender)}</strong></div>
             <div style="color: #b22222;"><strong>Total Tipout</strong></div><div style="color: #b22222;"><strong>$${totalTipout}</strong></div>
             <div style="color: #b22222;"><strong>Total Sales</strong></div><div style="color: #b22222;"><strong>$${Math.round(totalSales)}</strong></div>
             <div style="color: #b22222;"><strong>Tips Declared</strong></div><div style="color: #b22222;"><strong>$${Math.floor(declaredTips)}</strong></div>`;
@@ -46,3 +46,4 @@ document.getElementById('tipForm').addEventListener('submit', function (e) {
 
     document.getElementById('results').innerHTML = resultsHTML;
 });
+
