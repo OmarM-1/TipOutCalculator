@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tipout Calculator</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+  <main class="container">
+    <h1>Server Tipout Calculator</h1>
 
-        <h1 class="title">
-            <img src="mamaslogo.png" alt="Logo" class="logo">
-            Server Tipout Calculator
-        </h1>
-        <form id="tipForm">
-            <label for="beerSales">Beer Sales ($):</label>
-            <input type="number" id="beerSales" required />
+    <form id="tipForm">
 
-            <label for="foodSales">Food Sales ($):</label>
-            <input type="number" id="foodSales" required />
+      <label for="netCash">Net Cash</label>
+      <input
+        id="netCash"
+        type="number"
+        min="0"
+        step="0.01"
+        required
+      >
 
-            <label for="liquorSales">Liquor Sales ($):</label>
-            <input type="number" id="liquorSales" required />
+      <label for="beerSales">Beer Sales</label>
+      <input
+        id="beerSales"
+        type="number"
+        min="0"
+        step="0.01"
+        required
+      >
 
-            <label for="wineSales">Wine Sales ($):</label>
-            <input type="number" id="wineSales" required />
+      <label for="foodSales">Food Sales</label>
+      <input
+        id="foodSales"
+        type="number"
+        min="0"
+        step="0.01"
+        required
+      >
 
-            <label for="totalSales">Total Net Sales ($):</label>
-            <input type="number" id="totalSales" required />
+      <label for="liquorSales">Liquor Sales</label>
+      <input
+        id="liquorSales"
+        type="number"
+        min="0"
+        step="0.01"
+        required
+      >
 
-            <label for="creditCardTips">Credit Card Tips <span style="color: #d73b3e; ">*optional*</span> ($) :</label>
-            <input type="number" id="creditCardTips" />
+      <label for="wineSales">Wine Sales</label>
+      <input
+        id="wineSales"
+        type="number"
+        min="0"
+        step="0.01"
+        required
+      >
 
-            <button type="submit">Calculate Tipout</button>
-        </form>
+      <label for="totalSales">Total Net Sales</label>
+      <input
+        id="totalSales"
+        type="number"
+        min="0"
+        step="0.01"
+        required
+      >
 
-        <div id="results" class="results"></div>
-    </div>
+      <label for="creditCardTips">
+        Credit Card Tips (optional)
+      </label>
+      <input
+        id="creditCardTips"
+        type="number"
+        min="0"
+        step="0.01"
+      >
 
-    <script src="script.js"></script>
+      <button type="submit">Calculate Tipout</button>
+    </form>
+
+    <section
+      id="results"
+      class="results"
+      aria-live="polite"
+      hidden
+    ></section>
+  </main>
 </body>
 </html>
