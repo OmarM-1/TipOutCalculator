@@ -70,12 +70,6 @@ form.addEventListener("submit", function (event) {
   });
 
   results.innerHTML = `
-    <div
-      class="checkout-sheet-scroll"
-      tabindex="0"
-      role="region"
-      aria-label="Completed checkout sheet; scroll horizontally to view"
-    >
       <div class="checkout-sheet">
         <img
           class="checkout-sheet-image"
